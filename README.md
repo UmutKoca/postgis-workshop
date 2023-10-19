@@ -154,7 +154,7 @@ area[name="İstanbul"]->.searchArea;
 out center;
 ```
 
--- Hastaneleri sorgular: 
+-- Hastaneleri sorgula: 
 
 ```
 [out:json];
