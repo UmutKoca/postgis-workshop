@@ -127,4 +127,13 @@ WHERE student_id = 5 AND course_id = 102;
 
 ```
 
+## PostGIS
+
+-- PostGIS Eklentisini kur, versiyonu sorgula:
+```
+CREATE EXTENSION postgis;
+
+SELECT postgis_full_version();
+```
+
 
