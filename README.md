@@ -61,10 +61,11 @@ VALUES
 
 ```
 
-```
--- Tüm öğrencileri listele:
 
+-- Tüm öğrencileri listele:
+```
 SELECT * FROM students;
+```
 
 -- Bir öğrencinin adını ve soyadını al:
 
@@ -81,6 +82,14 @@ FROM students
 INNER JOIN enrollments ON students.student_id = enrollments.student_id
 INNER JOIN courses ON enrollments.course_id = courses.course_id
 WHERE students.student_id = 1;
+
+-- Bir dersin kaç öğrenci tarafından alındığını say:
+
+SELECT course_id, COUNT(*) AS student_count
+FROM enrollments
+WHERE course_id = 101
+GROUP BY course_id;
+
 
 -- Bir öğrencinin bir dersi alıp almadığını kontrol et:
 
