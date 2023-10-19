@@ -109,7 +109,7 @@ VALUES ('Ali', 'Demir', 'ali.demir@example.com');
 INSERT INTO courses (course_name, instructor)
 VALUES ('Tarih 1', 'Prof. E');
 
--- Bir öğrenciyi ir derse kaydet:
+-- Bir öğrenciyi bir derse kaydet:
 
 INSERT INTO enrollments (student_id, course_id, enrollment_date)
 VALUES (5, 103, '2023-09-19');
