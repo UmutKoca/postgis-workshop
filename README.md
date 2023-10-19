@@ -136,4 +136,23 @@ CREATE EXTENSION postgis;
 SELECT postgis_full_version();
 ```
 
+## İstanbul il ve ilçe sınırlarını indir:
+
+https://data.humdata.org/dataset/cod-ab-tur?
+
+## Overpass Turbo üzerinden eczane verilerini çek:
+
+```
+[out:json];
+area[name="İstanbul"]->.searchArea;
+(node[amenity=pharmacy](area.searchArea);
+ way[amenity=pharmacy](area.searchArea);
+ relation[amenity=pharmacy](area.searchArea);
+);
+out center;
+```
+
+
+
+
 
