@@ -142,6 +142,8 @@ https://data.humdata.org/dataset/cod-ab-tur?
 
 ## Overpass Turbo üzerinden eczane verilerini çek:
 
+-- Eczaneleri sorgula:
+
 ```
 [out:json];
 area[name="İstanbul"]->.searchArea;
@@ -151,6 +153,20 @@ area[name="İstanbul"]->.searchArea;
 );
 out center;
 ```
+
+-- Hastaneleri sorgular: 
+
+```
+[out:json];
+area[name="İstanbul"]->.searchArea;
+(node[amenity=hospital](area.searchArea);
+ way[amenity=hospital](area.searchArea);
+ relation[amenity=hospital](area.searchArea);
+);
+out center;
+```
+
+
 
 
 
