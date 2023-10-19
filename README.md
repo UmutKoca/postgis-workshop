@@ -3,6 +3,7 @@ Hkmo İstanbul Şubesi'nde verilen Postgis eğitiminin kodlarını içerir.
 
 # Veri Tabanında Gerekli Olan Tabloları Oluşturma:
 
+```
 -- Öğrenci Tablosu
 CREATE TABLE students (
     student_id SERIAL PRIMARY KEY,
@@ -25,3 +26,4 @@ CREATE TABLE enrollments (
     course_id INTEGER REFERENCES courses(course_id),
     enrollment_date DATE
 );
+```
