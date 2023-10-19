@@ -61,11 +61,12 @@ VALUES
 
 ```
 
+## Bir takım sorgulamalar:
 
+```
 -- Tüm öğrencileri listele:
-```
+
 SELECT * FROM students;
-```
 
 -- Bir öğrencinin adını ve soyadını al:
 
