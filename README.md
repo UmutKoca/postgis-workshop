@@ -166,7 +166,12 @@ area[name="İstanbul"]->.searchArea;
 out center;
 ```
 
-
+```
+[out:json];
+area[name = "İstanbul"];
+(way(area)["highway"~"^(motorway|trunk|primary|secondary)$"];>;);
+out;
+```
 
 
 
